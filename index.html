@@ -1,0 +1,47 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>DEVin Knowledge</title>
+</head>
+<body>
+    <aside>
+        <h1>DEVin <strong>Knowledge</strong> </h1>
+        <h2>Learn, Code and Save</h2>
+        <img src="./assets/img/icone.webp" alt="">
+    
+        <form action="submit">
+            
+            <label for="titulo">Título</label>
+            <input type="text" minlength="8" maxlength="64" id="titulo" placeholder="Digite um título">
+
+            <label for="skill">Linguagem/Skill</label>
+            <input type="text" minlength="4" maxlength="16  " id="skill" placeholder="Digite uma linguagem ou skill">
+
+            <label for="categoria">Categoria</label>
+            <select  id="categoria" placeholder="Selecione uma categoria">
+                <option value="selecione">Selecione</option>
+                <option value="frontend">FrontEnd</option>
+                <option value="backend">BackEnd</option>
+                <option value="fullstack">FullStack</option>
+                <option value="comportamental">Comportamental/Soft</option>
+            </select>
+
+            <label for="descricao">Descrição</label>
+            <input type="Text-Area" minlength="32" maxlength="512" id="descricao" placeholder="Digite uma descrição">
+
+            <label for="url">Vídeo do YouTube</label>
+            <input type="url" id="url"  placeholder="link YouTube">
+            
+            <button type="reset">Limpar</button>
+            <button type="submit">Salvar</button>
+        </form>
+    </aside>
+
+
+
+</body>
+</html>
