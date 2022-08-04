@@ -8,40 +8,70 @@
     <title>DEVin Knowledge</title>
 </head>
 <body>
-    <aside>
-        <h1>DEVin <strong>Knowledge</strong> </h1>
-        <h2>Learn, Code and Save</h2>
-        <img src="./assets/img/icone.webp" alt="">
-    
-        <form action="submit">
+    <section id="secaoformulario" class="secaoformulario">
+        <header>
+            <h1>DEVin <strong>Knowledge</strong> </h1>
+            <h2>Learn, Code and Save</h2>
+            <img src="./assets/img/icone.webp" alt="logo">
+        </header>
+        <form action="">
+            <input type="hidden" id="id" class="id">
             
-            <label for="titulo">Título</label>
-            <input type="text" minlength="8" maxlength="64" id="titulo" placeholder="Digite um título">
-
-            <label for="skill">Linguagem/Skill</label>
-            <input type="text" minlength="4" maxlength="16  " id="skill" placeholder="Digite uma linguagem ou skill">
-
-            <label for="categoria">Categoria</label>
-            <select  id="categoria" placeholder="Selecione uma categoria">
-                <option value="selecione">Selecione</option>
-                <option value="frontend">FrontEnd</option>
-                <option value="backend">BackEnd</option>
-                <option value="fullstack">FullStack</option>
-                <option value="comportamental">Comportamental/Soft</option>
-            </select>
-
-            <label for="descricao">Descrição</label>
-            <input type="Text-Area" minlength="32" maxlength="512" id="descricao" placeholder="Digite uma descrição">
-
-            <label for="url">Vídeo do YouTube</label>
-            <input type="url" id="url"  placeholder="link YouTube">
+            <div>
+                <label for="titulo">Título</label>
+                <input type="text" minlength="8" maxlength="64" id="titulo" class="titulo" placeholder="Digite um título">
+            </div>
             
-            <button type="reset">Limpar</button>
-            <button type="submit">Salvar</button>
+            <div>
+                <label for="skill">Linguagem/Skill</label>
+                <input type="text" minlength="4" maxlength="16  " id="skill" placeholder="Digite uma linguagem ou skill">
+            </div>
+            
+            <div>
+                <label for="categoria">Categoria</label>
+                <select  id="categoria" class="categoria" placeholder="Selecione uma categoria">
+                    <option value="selecione">Selecione</option>
+                    <option value="frontend">FrontEnd</option>
+                    <option value="backend">BackEnd</option>
+                    <option value="fullstack">FullStack</option>
+                    <option value="comportamental">Comportamental/Soft</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="descricao">Descrição</label>
+                <textarea minlength="32" maxlength="512" id="descricao" class="descricao" placeholder="Digite uma descrição"></textarea>
+            </div>
+
+            <div>
+                <label for="url">Vídeo do YouTube</label>
+                <input type="url" id="url"  placeholder="link YouTube">
+            </div>
+            
+            <div id="botoes">
+                <button type="reset" id="limpar">Limpar</button>
+                <button type="submit" id="salvar" >Salvar</button>
+            </div>
         </form>
-    </aside>
+    </section>
 
+    <section id="secaocards">
+        <ul id="contacategoria"><li>algo</li></ul>
+        <input type="text" id="pesquisar" placeholder="Digite a busca">
+        <button id="pesquisar" type="submit">Pesquisar</button>
+        <button id="cancelar" type="reset">Cancelar</button>
+        <ul id="cards">
+            <li>
+                'Titulo qualquer'<br>'skillqualquer'<br>'categoriaqualquer'
+                <img src="./assets/img/editar.png" alt="edit">
+                <img src="./assets/img/deletar-lixeira.png" alt="delete">
+
+            </li>
+            
+        </ul>
+    </section>
 
 
 </body>
+<script src="./scripts/index.js"></script>
 </html>
