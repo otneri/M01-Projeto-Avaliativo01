@@ -51,27 +51,34 @@
             <div id="botoes">
                 <button type="reset" id="limpar">Limpar</button>
                 <button type="submit" id="salvar" >Salvar</button>
+                <button type="submit" id="preencher" >Preencher</button>
             </div>
         </form>
     </section>
 
     <section id="secaocards">
-        <ul id="contacategoria"><li>algo</li></ul>
+        <ul id="contacategoria">
+            <li>algo</li
+        ></ul>
         <input type="text" id="pesquisar" placeholder="Digite a busca">
         <button id="pesquisar" type="submit">Pesquisar</button>
         <button id="cancelar" type="reset">Cancelar</button>
         <ul id="cards">
-            <li>
+            <li id="cardDica">
+                <a href="" id="editar"></a>
+                <a href="" id="excluir" ></a>
+            </li>
+            <!-- <main>
                 'Titulo qualquer'<br>'skillqualquer'<br>'categoriaqualquer'
                 <img src="./assets/img/editar.png" alt="edit">
                 <img src="./assets/img/deletar-lixeira.png" alt="delete">
 
-            </li>
-            
+            </main>
+             -->
         </ul>
     </section>
 
 
 </body>
-<script src="./scripts/index.js"></script>
+<script src="./scripts/index.mjs" type="module"></script>
 </html>
