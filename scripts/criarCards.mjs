@@ -1,69 +1,77 @@
+import {Dica} from './index.mjs'
+
 export function criarCard () {
+    let cards = document.getElementById('cards');
     let cardDica = document.getElementById('cardDica');
-    let id
-    function criaTitulo () {
-        let txt = document.getElementById('titulo').value;;
-        let titulo = document.createElement('h3');   
-        titulo.textContent = txt;
-        cardDica.appendChild(titulo);
+    let linkEditar = document.createElement('a');
+    let linkExcluir = document.createElement('a');
+    // cards.appendChild(cardDica);
 
-        console.log(txt);
-        return 
-    };
-    criaTitulo()
+    
+    // function criaTitulo () {
+    //     let txt = this.arrayDicas[i].titulo ;
+    //     let titulo = document.createElement('h3');   
+    //     titulo.textContent = txt;
+    //     cardDica.appendChild(titulo);
 
-    function criaSkill () {
-        let txt = document.getElementById('skill').value;;
-        let skillTexto = document.createElement('p');   
-        skillTexto.textContent = `Linguagem/Skill: ${txt}`;
-        cardDica.appendChild(skillTexto);
+    //     console.log(txt);
+    //     return 
+    // };
+    // criaTitulo()
 
-        console.log(txt);
-        return 
-    };
-    criaSkill();
+    // function criaSkill () {
+    //     let txt = this.arrayDicas[i].skill;
+    //     let skillTexto = document.createElement('p');   
+    //     skillTexto.textContent = `Linguagem/Skill: ${txt}`;
+    //     cardDica.appendChild(skillTexto);
 
-    function criaCategoria () {
-        let txt = document.getElementById('categoria').value;;
-        let categoriaTexto = document.createElement('p');   
-        categoriaTexto.textContent = `Categoria: ${txt}`;
-        cardDica.appendChild(categoriaTexto);
+    //     console.log(txt);
+    //     return 
+    // };
+    // criaSkill();
 
-        console.log(txt);
-        return 
-    };
-    criaCategoria()
+    // function criaCategoria () {
+    //     let txt = this.arrayDicas[i].categoria;
+    //     let categoriaTexto = document.createElement('p');   
+    //     categoriaTexto.textContent = `Categoria: ${txt}`;
+    //     cardDica.appendChild(categoriaTexto);
 
-    function criaDescricao () {
-        let txt = document.getElementById('descricao').value;;
-        let categoriaTexto = document.createElement('p');   
-        categoriaTexto.textContent = `${txt}`;
-        cardDica.appendChild(categoriaTexto);
+    //     console.log(txt);
+    //     return 
+    // };
+    // criaCategoria()
 
-        console.log(txt);
-        return 
-    };
-    criaDescricao()
+    // function criaDescricao () {
+    //     let txt = this.arrayDicas[i].descricao;
+    //     let categoriaTexto = document.createElement('p');   
+    //     categoriaTexto.textContent = `${txt}`;
+    //     cardDica.appendChild(categoriaTexto);
 
-    function criaUrl () {
-        let txt = document.getElementById('url').value;;
-        if (txt !== '') {
-            // criarbotao com link para o video
+    //     console.log(txt);
+    //     return 
+    // };
+    // criaDescricao()
 
-        }
+    // function criaUrl () {
+    //     let txt = this.arrayDicas[i].url;
+    //     if (txt !== '') {
+    //         // criarbotao com link para o video
+
+    //     }
         
-        return 
-    };  
+    //     return 
+    // };  
     function criaBotoes () {
         
         let botaoEditar = document.createElement('img');   
         botaoEditar.src = `../assets/img/editar.png`;
-        document.getElementById('editar').appendChild(botaoEditar);
+        linkEditar.appendChild(botaoEditar);
+        cardDica.appendChild(linkEditar);
         
         let botaoExcluir = document.createElement('img');   
         botaoExcluir.src = `./assets/img/deletar-lixeira.png`;
-        document.getElementById('excluir').appendChild(botaoExcluir);
-        
+        linkExcluir.appendChild(botaoExcluir);
+        cardDica.appendChild(linkExcluir);
         return 
     };
     criaBotoes()
