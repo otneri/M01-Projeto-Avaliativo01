@@ -3,32 +3,138 @@
     padding: 0em;
 }
 body{
-    display: flex;
-}
-#secaoformulario {
-    background-color: blue;
-    height: 100%;
-    width: 40%;
-    
-   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#secaoformulario form div{
+header{
+    padding: 2em;
+    width: 100%;
+    height: 10em;
+    background-color: cadetblue;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+header img {
+    width: 6em;
+    padding-left: 2em;
+}
+
+main{
+    display: flex;
+}
+
+
+#secaoformulario {
+    background-color: blue;
+    width: 40%;
+    
+}
+form{
+    height: 100%;
+}
+form input , select {
+    height: 3em;
+
+}
+
+form textarea {
+    height: 10em;
+}
+
+form button {
+    margin-left: 4em;
+    margin-bottom: 1em;
+
+
+}
+
+form div {
     display: flex; 
     flex-direction: column;
     padding: 1em;
 }
 
-.botoes{
+form .botoes {
     display: flex; 
+    background-color: beige;
+    margin-bottom: 10em;
     
 }
 
-#secaocards {
+.secaocards {
     height: 100%;
     width: 60%;
-}
-#secaocards img{
-    width: 22px;
+    margin: 2em 5em; 
 }
 
+.secaocards input {
+    width: 85%;
+    height: 3em;
+    padding: 1.5em;
+    background-color: rgb(92, 92, 92);
+
+}
+
+.secaocards img{
+    width: 40px;
+}
+
+.contacategoria {
+    display: flex;
+    padding-left: 3em;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+.contacategoria li {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 120px;
+    margin: 3em 2em ;
+    text-decoration: none;
+    background-color: aqua;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search button {
+    
+    padding: 0 1em;
+    background-color: rgb(92, 92, 92);
+}
+
+.cards {
+    display: flex;
+    margin-top: 3em;
+    margin: 10px;
+    flex-wrap: wrap;
+
+}
+
+.cards button {
+    background-color:white;
+}
+
+.cards li {
+    background-color: beige;
+    border-radius: 1em;
+    padding: .4em;
+    max-width: 30%;
+    flex: 1 1 30%;
+    margin: .5em;
+    list-style-type: none;
+}

@@ -8,89 +8,94 @@
     <title>DEVin Knowledge</title>
 </head>
 <body>
-    <section id="secaoformulario" class="secaoformulario">
-        <header>
+    <header>
+        <div>
             <h1>DEVin <strong>Knowledge</strong> </h1>
             <h2>Learn, Code and Save</h2>
-            <img src="./assets/img/icone.webp" alt="logo">
-        </header>
-        <form action="">
-            <input type="hidden" id="id" class="id">
-            
-            <div>
-                <label for="titulo">Título</label>
-                <input type="text" minlength="8" maxlength="64" id="titulo" class="titulo" placeholder="Digite um título">
-            </div>
-            
-            <div>
-                <label for="skill">Linguagem/Skill</label>
-                <input type="text" minlength="4" maxlength="16  " id="skill" placeholder="Digite uma linguagem ou skill">
-            </div>
-            
-            <div>
-                <label for="categoria">Categoria</label>
-                <select  id="categoria" class="categoria" placeholder="Selecione uma categoria">
-                    <option value="selecione">Selecione</option>
-                    <option value="frontend">FrontEnd</option>
-                    <option value="backend">BackEnd</option>
-                    <option value="fullstack">FullStack</option>
-                    <option value="comportamental">Comportamental/Soft</option>
-                </select>
-            </div>
+        </div>
+        <img src="./assets/img/icone.webp" alt="logo">
+    </header>
 
-            <div>
-                <label for="descricao">Descrição</label>
-                <textarea minlength="32" maxlength="512" id="descricao" class="descricao" placeholder="Digite uma descrição"></textarea>
-            </div>
-
-            <div>
-                <label for="url">Vídeo do YouTube</label>
-                <input type="url" id="url"  placeholder="link YouTube">
-            </div>
+    <main>
+        <section id="secaoformulario" class="secaoformulario">
             
-            <div id="botoes">
+            <form action="">
+                <input type="hidden" id="id" class="id">
+                
+                <div>
+                    <label for="titulo">Título</label>
+                    <input type="text" minlength="8" maxlength="64" id="titulo" class="titulo" placeholder="Digite um título">
+                </div>
+                
+                <div>
+                    <label for="skill">Linguagem/Skill</label>
+                    <input type="text" minlength="4" maxlength="16  " id="skill" class="text" placeholder="Digite uma linguagem ou skill">
+                </div>
+                
+                <div>
+                    <label for="categoria">Categoria</label>
+                    <select  id="categoria" class="categoria" placeholder="Selecione uma categoria">
+                        <option value="selecione">Selecione</option>
+                        <option value="frontend">FrontEnd</option>
+                        <option value="backend">BackEnd</option>
+                        <option value="fullstack">FullStack</option>
+                        <option value="comportamental">Comportamental/Soft</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="descricao">Descrição</label>
+                    <textarea minlength="32" maxlength="512" id="descricao" class="descricao" placeholder="Digite uma descrição"></textarea>
+                </div>
+
+                <div>
+                    <label for="url">Vídeo do YouTube</label>
+                    <input type="url" id="url"  placeholder="link YouTube">
+                </div>
+                
                 <button type="reset" id="limpar">Limpar</button>
                 <button type="submit" id="salvar" >Salvar</button>
                 <button type="submit" id="preencher" >Preencher</button>
+            </form>
+        </section>
+
+        <section id="secaocards" class="secaocards">
+            <ul id="contacategoria" class="contacategoria">
+                <li >
+                    <h3>Total</h3>
+                    <p id="total"></p>
+                    
+                </li>
+                <li >
+                    <h3>FullStack</h3>
+                    <p id="full"></p>
+                </li>
+                <li >
+                    <h3>BackEnd</h3>
+                    <p id="back"></p>
+                </li>
+                <li >
+                    <h3>FrontEnd</h3>
+                    <p id="front"></p>
+                </li>
+                <li >
+                    <h3>SoftSkill</h3>
+                    <p id="soft"></p>
+                </li>
+            </ul>
+
+            <div class="search">
+                <input type="text" id="pesquisar" class="pesquisar" placeholder="Digite a busca">
+                <button id="pesquisarbotao" type="submit"><img src="/assets/img/lupa.png" alt=""></button>
+                <button id="cancelar" type="reset"><img src="/assets/img/excluir.png" alt=""></button>
             </div>
-        </form>
-    </section>
 
-    <section id="secaocards">
-        <ul id="contacategoria">
-            <li >
-                <h3>Total</h3>
-                <p id="total"></p>
-            </li>
-            <li >
-                <h3>FullStack</h3>
-                <p id="full"></p>
-            </li>
-            <li >
-                <h3>BackEnd</h3>
-                <p id="back"></p>
-            </li>
-            <li >
-                <h3>FrontEnd</h3>
-                <p id="front"></p>
-            </li>
-            <li >
-                <h3>SoftSkill</h3>
-                <p id="soft"></p>
-            </li>
-        </ul>
-        <input type="text" id="pesquisar" placeholder="Digite a busca">
-        <button id="pesquisarbotao" type="submit"><img src="/assets/img/lupa.png" alt=""></button>
-        <button id="cancelar" type="reset"><img src="/assets/img/excluir.png" alt=""></button>
-        
-        <ul id="cards">
-            <li id="cardDica">
-
-            </li>
-            
-        </ul>
-    </section>
-
+            <ul id="cards" class="cards">
+                
+                
+            </ul>
+        </section>
+    </main>
 
 </body>
 <script src="./scripts/index.mjs" type="module"></script>
