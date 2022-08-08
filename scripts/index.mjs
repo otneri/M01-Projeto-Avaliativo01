@@ -101,7 +101,7 @@ class Dica {
 
             let botaoEditar = document.createElement('button');   
             botaoEditar.innerHTML = (' <img src= "../assets/img/editar.png"></img>') ;
-            botaoEditar.onclick  = () => this.prepararEdicao(JSON.stringify(elemento[i].id))
+            botaoEditar.onclick  = () => this.prepararEdicao(JSON.stringify(elemento[i]))
         
             let botaoExcluir = document.createElement('button');   
             botaoExcluir.innerHTML = ('<img src = "./assets/img/deletar-lixeira.png" ></img>');
@@ -214,6 +214,7 @@ botaosalvar.addEventListener ('click', function (e) {
     e.preventDefault();
     dica.salvar();
 });
+
 // EVENTO DE CLICK DO BOTÃO DE PESQUISAR
 botaoPesquisar.addEventListener ('click', function (e) {
     e.preventDefault();

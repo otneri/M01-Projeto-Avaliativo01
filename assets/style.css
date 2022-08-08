@@ -19,7 +19,7 @@ header{
     
 }
 header img {
-    width: 6em;
+    width: 12em;
     padding-left: 2em;
 }
 
@@ -29,11 +29,14 @@ main{
 
 
 #secaoformulario {
-    background-color: blue;
+    background-color: rgb(83, 135, 246);
     width: 40%;
+    margin-top: 2em;
     
 }
 form{
+   
+    font-size: larger;
     height: 100%;
 }
 form input , select {
@@ -46,13 +49,24 @@ form textarea {
 }
 
 form button {
-    margin-left: 4em;
+    
     margin-bottom: 1em;
+    margin: 2em;
+    padding: 1em;
+    border-radius: .5em;
+    font-weight: bolder;
+
 
 
 }
 
-form div {
+form button:hover{
+    background-color: black;
+    color: white ;
+}
+
+form div{
+    font-weight: bolder;
     display: flex; 
     flex-direction: column;
     padding: 1em;
@@ -102,7 +116,7 @@ form .botoes {
     height: 120px;
     margin: 3em 2em ;
     text-decoration: none;
-    background-color: aqua;
+    background-color: cadetblue;
 }
 
 .search {

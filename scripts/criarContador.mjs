@@ -1,3 +1,4 @@
+
 export function criarContador (obj) {
     let total = 0
     let frontend = 0
